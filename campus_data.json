@@ -1,0 +1,108 @@
+{
+  "campus_name": "Vignan University",
+  "event": "Mahotsav 2026",
+  "locations": {
+
+    "main_gate": {
+      "name": "Vignan Main Gate",
+      "type": "Entrance",
+      "zone": "Entry",
+      "search_keywords": ["gate", "entrance", "arch", "entry", "registration"],
+      "description": "Primary South-East entry point for Mahotsav registrations.",
+      "events": ["Registrations", "Help Desk Support"],
+      "facilities": { "help_desk": true, "security": true, "first_aid": true },
+      "navigation": ["Located at the South-East end of the campus main road."],
+      "connected_to": ["library", "a_block"]
+    },
+
+    "library": {
+      "name": "NTR Library",
+      "type": "Library",
+      "zone": "Academic",
+      "search_keywords": ["books", "reading room", "study center"],
+      "description": "A quiet zone converted into a performance area for Literature and Dance events during Mahotsav.",
+      "events": ["Literature", "Solo Dance"],
+      "facilities": { "drinking_water": true, "washroom": true, "wifi": true },
+      "navigation": ["Located on the RIGHT side of the main road when entering from Main Gate."],
+      "connected_to": ["main_gate", "a_block", "h_block"]
+    },
+
+    "a_block": {
+      "name": "A-Block",
+      "type": "Administrative & Academic",
+      "zone": "Academic",
+      "search_keywords": ["admin", "vc office", "exam cell", "sangamam"],
+      "description": "Administrative hub hosting major seminar halls and high-level offices.",
+      "events": ["Literature", "Classical Dance"],
+      "facilities": { "washroom": true, "drinking_water": true, "canteen": true },
+      "navigation": ["Located opposite the NTR Library on the LEFT side of the road."],
+      "connected_to": ["main_gate", "library", "h_block"]
+    },
+
+    "h_block": {
+      "name": "H-Block",
+      "type": "Engineering Building",
+      "zone": "Academic",
+      "search_keywords": ["ece", "eee", "agri"],
+      "description": "Engineering academic building hosting ECE and EEE departments.",
+      "facilities": { "washroom": true, "drinking_water": true },
+      "navigation": ["Located further down the road after A-Block."],
+      "connected_to": ["a_block", "library", "n_block"]
+    },
+
+    "n_block": {
+      "name": "N-Block",
+      "type": "Technology Hub",
+      "zone": "Academic",
+      "search_keywords": ["gaming", "robotics", "coding", "ai ml"],
+      "description": "Main academic building hosting technical competitions.",
+      "events": ["Gaming", "Robo Games", "Music"],
+      "facilities": { "washroom": true, "drinking_water": true },
+      "navigation": ["Tall building located after H-Block on the campus road."],
+      "connected_to": ["h_block", "u_block"]
+    },
+
+    "u_block": {
+      "name": "U-Block",
+      "type": "Event Center",
+      "zone": "Event",
+      "search_keywords": ["red building", "food stalls", "pro show"],
+      "description": "The red building hosting Mahotsav food stalls and pro shows.",
+      "events": ["Pro Show", "Food Stalls", "Informals"],
+      "facilities": { "canteen": true, "washroom": true },
+      "navigation": ["Large RED building located after N-Block."],
+      "connected_to": ["n_block", "cricket_ground", "convocation_hall", "lara_gate"]
+    },
+
+    "cricket_ground": {
+      "name": "Cricket Ground",
+      "type": "Sports Venue",
+      "zone": "Sports",
+      "search_keywords": ["stadium", "football", "athletics"],
+      "description": "Large outdoor stadium used for athletics and football.",
+      "navigation": ["Located behind U-Block."],
+      "connected_to": ["u_block"]
+    },
+
+    "convocation_hall": {
+      "name": "Convocation Hall",
+      "type": "Auditorium",
+      "zone": "Event",
+      "search_keywords": ["auditorium", "stage"],
+      "description": "Indoor auditorium for inauguration and cultural events.",
+      "navigation": ["Located to the LEFT side of U-Block."],
+      "connected_to": ["u_block"]
+    },
+
+    "lara_gate": {
+      "name": "Vignan LARA Gate",
+      "type": "Entrance",
+      "zone": "Entry",
+      "search_keywords": ["back gate", "lara entrance"],
+      "description": "Western entrance of the campus.",
+      "navigation": ["Located at the far end of the campus road past U-Block."],
+      "connected_to": ["u_block"]
+    }
+
+  }
+}
